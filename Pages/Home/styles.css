@@ -1,0 +1,92 @@
+.nav-link{
+    font-size: 18px;
+    font-family: 'arial';
+    color: black;
+}
+
+.nav-link:hover{
+    color: rgb(172, 0, 43);
+}
+
+p{
+    font-family: 'arial';
+    font-size: 18px;
+}
+
+.ContainerApre{
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: center;
+}
+
+.minhafoto{
+    width: 15%;
+    margin-right: 5%;
+}
+
+#sobre{
+    text-decoration: none;
+    color: #a0a0a0;
+}
+
+.linkProj{
+    text-decoration: none;
+    color: black;
+}
+
+.linkProj:hover{
+    color:rgb(172, 0, 43);
+}
+
+.flex {
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+}
+
+.flex > .tcc, .tecnico, .jogo, .comp_graf{
+    flex: 1 1 300px; 
+    margin: 0 100px;
+}
+
+.tcc, .tecnico, .jogo, .comp_graf{
+    padding: 5%;
+    margin-bottom: 2%;
+    height: 500px;
+    text-align: center;
+}
+
+.material-icons{
+    width: 200px;
+    height: 200px;
+    font-size: 120px;
+}
+
+.ContainerServ{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#linha-horizontal {
+	border: 2px solid #a0a0a0;
+	margin: 5% 20%;
+}
+
+.ContainerEnd{
+    display: flex;
+	flex-direction: row;
+	align-items:baseline;
+    justify-content: space-evenly;
+    margin: 5% 0% 8% 0%;
+}
+
+.dispo{
+    flex-direction: column;
+}
+.siga{
+    font-family: 'arial';
+    font-size: 18px;
+}

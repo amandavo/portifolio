@@ -1,0 +1,37 @@
+.nav-link{
+    font-size: 18px;
+    font-family: 'arial';
+    color: black;
+}
+
+.nav-link:hover{
+    color: rgb(172, 0, 43);
+}
+
+p{
+    font-family: 'arial';
+    font-size: 18px;
+}
+
+.ContainerFormacao, .ContainerIdioma{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    margin: 0% 20%;
+}
+
+.ContainerTitulo{
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    font-size:22px; 
+    color: #a0a0a0; 
+    margin: 5% 35% 0% 15%;
+}
+
+
+.ContainerCompe{
+    flex-direction: column;
+	margin: 0% 13%;
+	
+}
