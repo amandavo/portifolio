@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Amanda Vieira - Portifolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/"></a>
+        <img src="../../assets/logo.png" class="logoo">
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="../Home/index.html">Início</a></li>
+          <li><a href="../SobreMim/index.html">Sobre</a></li>
+          <li><a href="../Projetos/index.html">Projetos</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script src="mobile-navbar.js"></script>
+
+    <div class="rows">
+
+      <div class="row1">
+        <div class="contato">
+          <p id="titulo">Entre em contato</p>
+          <p id="ende">ENDEREÇO</p>
+          <p>Rua Olinda</p>
+          <p>CEP: 12.235-830</p>
+          <p>Parque Industrial</p>
+          <p>São José dos Campos - SP</p>
+          <p>Brasil</p>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="linha">
+          <p>Nome</p>
+          <p style="margin-left: 42%;">Email</p>
+        </div> 
+
+        <div class="linha">
+          <input id="nome" type="name"
+          size="30" maxlenght="60">
+          <input id="email" type="email"
+          size="30" maxlenght="60">
+        </div> 
+
+        <div class="linha">
+          <p>Serviço</p>
+          <p style="margin-left: 39%;">Preço</p>
+        </div>
+          
+        <div class="linha">
+          <select name="serv" class="select">
+            <option value="">Está interessado em...</option>
+            <option value="11">Me contratar</option>
+            <option value="21">Uma parceria longa</option>
+            <option value="31">Ajuda com um projeto</option>
+            <option value="41">Apenas quero dizer Oi</option>
+          </select>
+
+          <select name="preco" class="select2">
+            <option value="">R$</option>
+            <option value="12">500 - 1000</option>
+            <option value="22">1000 - 2500</option>
+            <option value="32">2500 - 5000</option>
+            <option value="42">5000 ou mais</option>
+          </select>
+        </div>
+
+        <p>Mensagem</p>
+        <form action="../Contato/index.html" method="get">
+            <textarea name="txtdesc" id="txtdesc" 
+            cols="70" rows="5"></textarea>
+        </form>
+
+        <br>
+        <input id="enviar" type="submit">
+      </div>
+    </div>
+  </body>
+</html>

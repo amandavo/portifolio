@@ -7,35 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Tcc | Amanda</title>
+    <title>Tcc | Amanda - Portifolio</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
-    <link href="../bootstrap-5.1.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="../bootstrap-5.1.3-dist/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-white bg-white">
-        <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: space-between; margin-right: 5%;">
-            <img id="logo" src="../../assets/logoo.png" style="width:11%; margin: 2% 0% 0% 5%;">
-            <ul class="navbar-nav">
-                <li class="nav-item active" style="color: black">
-                    <a class="nav-link" href="file:///D:/Portifolio/Pages/Home/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="file:///D:/Portifolio/Pages/SobreMim/index.html">Sobre mim</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="file:///D:/Portifolio/Pages/Projetos/index.html">Projetos</a>
-                </li>
-            </ul>
+    <header>
+        <nav>
+          <a class="logo"></a>
+          <img src="../../assets/logo.png" class="logoo">
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="../Home/index.html">Início</a></li>
+            <li><a href="../SobreMim/index.html">Sobre</a></li>
+            <li><a href="../Projetos/index.html">Projetos</a></li>
+            <li><a href="../Contato/index.html">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+      <script src="mobile-navbar.js"></script>
+
+      <div class="rows">
+
+        <div class="row1">
+          <div class="infos">
+            <p class="subtitle">TCC - Trabalho de Conclusão de Curso</p>
+            <p id="titulo">Sistema de Controle de <br>Ocorrências Escolares</p>
+            <p class="subtitle">MINHA FUNÇÃO</p>
+            <p>Aluna</p>
+            <p>Estagiária</p>
+            <p class="subtitle">CLIENTE</p>
+            <p>Colégio Técnico "Antônio Teixeira Fernandes"</p>
+            <p class="subtitle">ANO</p>
+            <p>2021</p><br>
+            <p><a class="linkP" href="https://github.com/ogabrielbarbosa/TCC-Orientador" target="_new">por icone github - Orientador</a></p>
+            <br><p><a class="linkP" href="https://github.com/ogabrielbarbosa/TCC-Professor" target="_new">por icone github - Professor</a></p>
+            
+          </div>
         </div>
-    </nav>
-
+  
+        <div class="row2">
+            <p>O Livro de Ocorrência Escolar (LOE) trata-se de um instrumento institucional utilizado em algumas escolas brasileiras para registrar os acontecimentos que prejudicam o funcionamento dessas instituições no que diz respeito ao comportamento dos alunos e alunas. </p>  
+            <br><p>Foi desenvolvido uma aplicação de registro de ocorrência, em que no site web o professor possa registrá-la no momento exato do ocorrido. Já no módulo do orientador é possível ter o controle exato de todas as ocorrências já registradas. Também pode ser enviado um email a respeito da situação para os pais automaticamente com apenas um clique.</p>
+            <br><p>Com o desenvolvimento da aplicação, foram resolvidos os empecilhos, eliminando a fila e o tempo de espera pelo uso do livro, gerando agilidade para enviar um aluno para a sala da orientação e facilitando a comunicação com os responsáveis do estudante em questão.</p>
+            <p class="visu">Visualize o site do: </p>
+            <a class="linkP" href="https://tccmoduloprofessor.netlify.app/" target="_new">Professor</a>
+            <br><a class="linkP" href="https://tccmoduloorientador.netlify.app/" target="_new">Orientador</a>
+            <br><img src="../../assets/ProjTcc/login.png">
+        </div>
+    </div>
     
-</body>
+    <div class="containerImgs">
+        <img src="../../assets/ProjTcc/login.png">
+    </div>
 
+</body>
 </html>
