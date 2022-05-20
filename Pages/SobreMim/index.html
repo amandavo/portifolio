@@ -34,7 +34,7 @@
     <script src="mobile-navbar.js"></script>
     </section>
 
-    <div class="content">
+    <!--<div class="content">
         <div class="slides">
             <input type="radio" name="slide" id="slide1" checked>
             <input type="radio" name="slide" id="slide2">
@@ -44,7 +44,7 @@
             <input type="radio" name="slide" id="slide6">
 
             <div class="slide s1">
-                <img src="../../assets/fotosPortfolio0/eu">
+                <img src="../../assets/fotosPortfolio/eu">
             </div>
 
             <div class="slide">
@@ -76,7 +76,77 @@
                 <label class="bar" for="slide6"></label>
             </div>
         </div>
-    </div>
+    </div>-->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="../../assets/fotosPortfolio/eu" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../../assets/fotosPortfolio0/computador" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../../assets/fotosPortfolio0/family" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../../assets/fotosPortfolio0/formanda" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../../assets/fotosPortfolio0/apreTcc" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../../assets/fotosPortfolio0/snow" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 
     <p style="font-size:22px; color: #a0a0a0; margin: 5% 0% 2% 15%;">
         Formação Acadêmica</p>

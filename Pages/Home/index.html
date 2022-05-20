@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <title>Portifólio | Amanda Vieira</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
@@ -14,75 +12,82 @@
 </head>
 
 <body>
+    <div id="progress">
+        <span id="progress-value">
+            <i class="fa-solid fa-arrow-up"></i>
+        </span>
+    </div>
+    <script src="https://kit.fontawesome.com/4a48cb8251.js" crossorigin="anonymous"></script>
     <section id="seta">
-    <header>
-      <nav>
-        <a class="logo"></a>
-        <img src="../../assets/logo.png" class="logoo">
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+        <header>
+            <nav>
+                <img src="../../assets/logo.png" class="logo" alt="Amanda Vieira">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="">Início</a></li>
+                    <li><a href="../SobreMim/index.html">Sobre</a></li>
+                    <li><a href="../Projetos/index.html">Projetos</a></li>
+                    <li><a href="../Contato/index.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <script src="mobile-navbar.js"></script>
+
+        <div class="ContainerApre">
+            <img class="minhafoto" src="../../assets/eu.png">
+            <div class="apre">
+                <p id="nome">AMANDA VIEIRA</p>
+                <p id="tecnica"><b>Técnica em Informática</b></p>
+                <p id="disc">Nos últimos 3 anos, estudei linguagens de programação, algoritmo, lógica e atualmente, faço
+                    faculdade/tecnólogo
+                    para estar em constante aprendizado e em busca de atingir meu potencial.</p>
+                <a class="hrefSobreMim" href="#projetos" target="_new">Visualizar Projetos</a>
+                <span> ou </span>
+                <a class="hrefProj" href="#" target="_new">Ler Sobre mim</a>
+            </div>
         </div>
-        <ul class="nav-list">
-          <li><a href="">Início</a></li>
-          <li><a href="../SobreMim/index.html">Sobre</a></li>
-          <li><a href="../Projetos/index.html">Projetos</a></li>
-          <li><a href="../Contato/index.html">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <script src="mobile-navbar.js"></script>
     </section>
 
-    <div class="ContainerApre">
-        <img class="minhafoto" src="../../assets/eu.png">
-        <div class="apre">
-            <p id="nome">AMANDA VIEIRA</p>
-            <p id="tecnica"><b>Técnica em Informática</b></p>
-            <p id="disc">Nos últimos 3 anos, estudei linguagens de programação, algoritmo, lógica e atualmente, faço faculdade/tecnólogo 
-                para estar em constante aprendizado e em busca de atingir meu potencial.</p>
-            <a class="hrefSobreMim" href="#" target="_new">Visualizar Projetos</a>
-            <span> ou </span>
-            <a class="hrefProj" href="#" target="_new">Ler Sobre mim</a>
+    <section id="projetos">
+        <p class="Projetos">Projetos</p>
+        <div class="flex">
+            <a class="linkProj" href="../ProjetoTcc/index.html">
+                <div class="boxProjetos">
+                    <p>2021</p>
+                    <p>Tcc - Trabalho de Conclusao de Curso</p>
+                    <span class="material-icons">assignment</span>
+                </div>
+            </a>
+
+            <a class="linkProj" href="../ProjetoTec/index.html">
+                <div class="boxProjetos">
+                    <p>2019 - 2021</p>
+                    <p>Dispositivo para Surdo-cegos</p>
+                    <span class="material-icons">computer</span>
+                </div>
+            </a>
+
+            <a class="linkProj" href="../ProjetoJogo/index.html">
+                <div class="boxProjetos">
+                    <p>2019</p>
+                    <p>Jogo</p>
+                    <span class="material-icons">sports_esports</span>
+                </div>
+            </a>
+
+            <a class="linkProj" href="../ProjetoComp/index.html">
+                <div class="boxProjetos">
+                    <p>2018 - 2020</p>
+                    <p>Computação Gráfica</p>
+                    <span class="material-icons">edit</span>
+                </div>
+            </a>
         </div>
-    </div>
-
-    <p class="Projetos">Projetos</p>
-    <div class="flex">
-        <a class="linkProj" href="../ProjetoTcc/index.html">
-            <div class="boxProjetos">
-                <p>2021</p>
-                <p>Tcc - Trabalho de Conclusao de Curso</p>
-                <span class="material-icons">assignment</span>
-            </div>
-        </a>
-
-        <a class="linkProj" href="../ProjetoTec/index.html">
-            <div class="boxProjetos">
-                <p>2019 - 2021</p>
-                <p>Curso Técnico em Informática</p>
-                <span class="material-icons">computer</span>
-            </div>
-        </a>
-
-        <a class="linkProj" href="../ProjetoJogo/index.html">
-            <div class="boxProjetos">
-                <p>2019</p>
-                <p>Jogo</p>
-                <span class="material-icons">sports_esports</span>
-            </div>
-        </a>
-
-        <a class="linkProj" href="../ProjetoComp/index.html">
-            <div class="boxProjetos">
-                <p>2018 - 2020</p>
-                <p>Computação Gráfica</p>
-                <span class="material-icons">edit</span>
-            </div>
-        </a>
-    </div>
-
+    </section>
     <div class="ContainerServ">
         <p>Precisa de meus serviços?</p>
         <p style="font-size:40px;">Vamos trabalhar juntos</p>
@@ -113,14 +118,6 @@
             <a href="https://www.linkedin.com/in/amanda-vo" target="_new" style="color: black;">LinkedIn</a></br>
             <a href="https://github.com/amandavo" target="_new" style="color: black;">Github</a>
         </div>
-    </div>
-    
-    <div class="containerSetaUp">
-        <a href="#seta">
-            <button class="upward" type="submit">
-                <span class="material-icons" id="iconeSeta">arrow_upward</span>
-            </button>
-        </a>
     </div>
 </body>
 
