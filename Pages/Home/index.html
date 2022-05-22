@@ -9,9 +9,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../global.css">
 </head>
-
-<body>
+<!--
+-linkar home na logo
+-talvez modificar foto
+-centralizar seta pra cima
+-capa do dispositivo
+-centralizar linha horizontal
+-colocar hover nos icones do final da pagina
+-->
+<body style="background-color: rgb(229, 229, 229);">
     <div id="progress">
         <span id="progress-value">
             <i class="fa-solid fa-arrow-up"></i>
@@ -29,96 +37,123 @@
                 </div>
                 <ul class="nav-list">
                     <li><a href="">Início</a></li>
-                    <li><a href="../SobreMim/index.html">Sobre</a></li>
+                    <li><a href="../Habilidades/index.html">Habilidades</a></li>
                     <li><a href="../Projetos/index.html">Projetos</a></li>
                     <li><a href="../Contato/index.html">Contato</a></li>
                 </ul>
             </nav>
         </header>
-        <script src="mobile-navbar.js"></script>
+        <script src="../mobile-navbar.js"></script>
 
-        <div class="ContainerApre">
-            <img class="minhafoto" src="../../assets/eu.png">
+        <div class="containerApre">
             <div class="apre">
                 <p id="nome">AMANDA VIEIRA</p>
                 <p id="tecnica"><b>Técnica em Informática</b></p>
                 <p id="disc">Nos últimos 3 anos, estudei linguagens de programação, algoritmo, lógica e atualmente, faço
                     faculdade/tecnólogo
                     para estar em constante aprendizado e em busca de atingir meu potencial.</p>
-                <a class="hrefSobreMim" href="#projetos" target="_new">Visualizar Projetos</a>
+                <a href="#projetos">Visualizar Projetos</a>
                 <span> ou </span>
-                <a class="hrefProj" href="#" target="_new">Ler Sobre mim</a>
+                <a href="../Habilidades/index.html">Habilidades</a>
+            </div>
+            <img src="../../assets/amanda.jpg">
+        </div>
+    </section>
+
+
+    <p id="titleProj">Projetos</p>
+
+    <div id="goProject">
+    <button>
+        <i class="fa-solid fa-angle-down"></i>
+    </button>
+    </div>
+    
+    <div class="containerProj">
+        <img src="../../assets/proj/tcc.png">
+        <div class="proj">
+            <p class="title">Sistema de Ocorrências</p>
+            <p>Aplicação Web desenvolvida em 2021 que manipula ocorrências de alunos de diversas salas de aulas.</p>
+            <p id="tools">Ferramentas utilizadas:</p>
+            <ul>
+                <li>ReactJs</li>
+                <li>Firebase</li>
+            </ul><br>
+            <div>
+                <a href="https://tccmoduloprofessor.netlify.app/"><button>Site do Professor</button></a>
+                <a href="https://tccmoduloorientador.netlify.app/"><button>Site do Orientador</button></a>
+            </div>
+            <div>
+                <a href="https://github.com/ogabrielbarbosa/TCC-Professor"><button>Código - Professor</button></a>
+                <a href="https://github.com/ogabrielbarbosa/TCC-Professor"><button>Código - Orientador</button></a>
             </div>
         </div>
-    </section>
-
-    <section id="projetos">
-        <p class="Projetos">Projetos</p>
-        <div class="flex">
-            <a class="linkProj" href="../ProjetoTcc/index.html">
-                <div class="boxProjetos">
-                    <p>2021</p>
-                    <p>Tcc - Trabalho de Conclusao de Curso</p>
-                    <span class="material-icons">assignment</span>
-                </div>
-            </a>
-
-            <a class="linkProj" href="../ProjetoTec/index.html">
-                <div class="boxProjetos">
-                    <p>2019 - 2021</p>
-                    <p>Dispositivo para Surdo-cegos</p>
-                    <span class="material-icons">computer</span>
-                </div>
-            </a>
-
-            <a class="linkProj" href="../ProjetoJogo/index.html">
-                <div class="boxProjetos">
-                    <p>2019</p>
-                    <p>Jogo</p>
-                    <span class="material-icons">sports_esports</span>
-                </div>
-            </a>
-
-            <a class="linkProj" href="../ProjetoComp/index.html">
-                <div class="boxProjetos">
-                    <p>2018 - 2020</p>
-                    <p>Computação Gráfica</p>
-                    <span class="material-icons">edit</span>
-                </div>
-            </a>
+    </div>
+    
+    <div class="containerProj">
+        <img src="../../assets/proj/game.png">
+        <div class="proj">
+            <p class="title">Jogo</p>
+            <p>Desenvolvido em projeto conjunto de alunas e professoras do ITA* para ensinar a linguagem Python.</p>
+            <p id="explica">*Instituto Tecnológico de Aeronáutica</p>
+            <p id="tools">Ferramentas utilizadas:</p>
+            <ul>
+                <li>Python</li>
+                <li>Pygame</li>
+            </ul><br>
+            <div>
+                <a href="../videogame.html"><button class="game">Ver Vídeo</button></a>
+                <a href="https://github.com/thaybaldao/stem2dgame"><button class="game">Ver Código</button></a>
+            </div>
         </div>
-    </section>
-    <div class="ContainerServ">
-        <p>Precisa de meus serviços?</p>
-        <p style="font-size:40px;">Vamos trabalhar juntos</p>
+    </div>
+
+    <div class="containerProj">
+        <img src="../../assets/proj/device.png">
+        <div class="proj">
+            <p class="title">Dispositivo para Surdocegos</p>
+            <p>Dispositivo computacional microcontrolado que permite a comunicação independente a Surdocegos, desenvolvido em 2019.</p>
+            <p id="tools">Ferramentas utilizadas:</p>
+            <ul>
+                <li>Arduino</li>
+                <li>Tinkercad</li>
+                <li>MIT App Inventor</li> 
+            </ul>
+            <div>
+                <a href=""><button class="device">Ver Código</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="servico">
+        <p>Precisa do meu serviço?</p>
+        <a href="../Contato/index.html">
+            <b>Vamos trabalhar juntos </b>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
     </div>
 
     <div id="linha-horizontal"></div>
 
-    <div class="ContainerEnd">
-        <div class="info">
-            <p style="font-size:22px; color:#a0a0a0">Informaçoes de contato —</p>
-            <p>E-mail: </p>
-            <p>amandavoliveira0@gmail.com</p>
-            <p>Celular: </p>
-            <p>(12)99243-2428</p>
-        </div>
-
-        <div class="dispo">
-            <p style="font-size:22px; color:#a0a0a0">Disponibilidade atual —</p>
-            <p>Estou estudando para melhor</p>
-            <p>te atender, ficarei feliz em</p>
-            <p>discutir novas oportunidades.</p>
-            <p>Vamos entrar em contato!</p>
-        </div>
-
-        <div class="siga">
-            <p style="font-size:22px; color:#a0a0a0">Me siga —</p>
-            <a href="https://www.instagram.com/amanda.caires2/" target="_new" style="color: black;">Instagram</a></br>
-            <a href="https://www.linkedin.com/in/amanda-vo" target="_new" style="color: black;">LinkedIn</a></br>
-            <a href="https://github.com/amandavo" target="_new" style="color: black;">Github</a>
-        </div>
+    <div class="siga">
+        <button>
+            <i class="fa-brands fa-github">
+                <a href="https://github.com/amandavo" target="_new"></a>
+            </i>
+        </button>
+        <button>
+            <i class="fa-brands fa-linkedin">
+                <a href="https://www.linkedin.com/in/amanda-vo" target="_new"></a>
+            </i>
+        </button>
+        <button>
+            <i class="fa-brands fa-instagram">
+                <a href="https://www.instagram.com/amanda.caires2/" target="_new"></a>
+            </i>
+        </button>
     </div>
+
 </body>
 
 </html>
