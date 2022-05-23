@@ -1,17 +1,14 @@
 # PORTIFOLIO | AMANDA VIEIRA
 
-## Sobre
+## :pencil: Sobre
+O projeto tem como objetivo criar um portifolio em site para a matéria de Design Digital.
 
-A criação foi a partir de um trabalho de Design Digital, funcionando com entregas parciais até a entrega final.
+## :gear: Tecnologias Utilizadas
+[Figma](http://www.figma.com), [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML), [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), [Python](https://www.python.org/), [Flask](https://flask.palletsprojects.com/en/2.0.x/), [Visual Studio Code](https://code.visualstudio.com/)
 
-## Tecnologias
+## :file_folder: Configuração das pastas
+* `doc`: Pasta com Protótipos
+* `static`: Pasta com Códigos em CSS, fotos etc.
+* `templates`: Pasta com Códigos em HTML
 
-As seguintes tecnologias, ferramentas e bibliotecas foram utilizadas:
-
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fprogramadoresbrasil.com.br%2F2020%2F02%2Fo-que-e-html-e-css%2F&psig=AOvVaw1Zl5ZvCHNbXvbFOFQMcS2x&ust=1648690369086000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjEu7PY7PYCFQAAAAAdAAAAABAY">
-
-## Estrutura
-
-* assets: contém imagens
-* doc: contém protótipos
-* Pages: contém paginas do site, cada uma com seu index.html e styles.css
+outras: Pasta com Documentação relacionada ao Projeto
