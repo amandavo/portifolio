@@ -1,0 +1,98 @@
+p, label{
+  font-family:'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.rows{
+  display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+  margin-top: 10%;
+  
+}
+
+#titulo{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#ende{
+  font-size: 15px;
+  color: #a0a0a0;
+  margin: 10% 0% 4% 0%;
+}
+
+.row3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.campo{
+  display: flex;
+	flex-direction: column;
+  width: 49%;
+  margin-bottom: 2%;
+}
+
+input{
+  width: 100%;
+  height: 6vh;
+  font-size: 18px;
+}
+
+.assunto{
+  display: flex;
+	flex-direction: column;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+#txtdesc{
+  min-width: 41.5vw;
+  max-width: 41.5vw;
+  height: 20vh;
+  font-size: 18px;
+}
+
+#enviar{
+  width: 20vw;
+  height: 6vh;
+  font-size: 17px;
+  border: none;
+  background-color: #a0a0a0;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#enviar:hover{
+  background-color: #707070;  
+}
+
+@media screen and (max-width: 636px) {
+  .rows{
+    flex-direction: column;
+  }
+  .row2{
+    margin-top: 10%;
+  }
+  input{
+    height: 3vh;
+  }
+  #enviar{
+    height: 3vh;
+    width: 42vw;
+    font-size: 15px;
+  }
+  #txtdesc{
+    min-width: 80.5vw;
+    max-width: 80.5vw;
+  }
+}
