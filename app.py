@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 #Conexão com o Banco de Dados
 app.config['MYSQL_HOST'] = 'localhost' # = 127.0.0.1
-app.config['MYSQL_USER'] = 'admin'
+app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'admin'
 app.config['MYSQL_DB'] = 'portifolio'
 
@@ -13,9 +13,21 @@ mysql = MySQL(app)
 
 
 @app.route("/")
-@app.route("/index")
+@app.route("/home")
 def home():
     return render_template("home.html")
+
+@app.route("/habilidades")
+def habilidades():
+    return render_template("habilidades.html")
+
+@app.route("/video_game")
+def video_game():
+    return render_template("/video_game.html")
+
+@app.route("/video_device")
+def video_device():
+    return render_template("/video_device.html")
 
 
 
@@ -37,8 +49,8 @@ def contato():
     return render_template("contato.html")
 
 
-@app.route("/dados")
-def dados():
+@app.route("/tabela")
+def tabela():
     cur = mysql.connection.cursor()
 
     contato = cur.execute("select * from contato")

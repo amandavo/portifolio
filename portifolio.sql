@@ -8,6 +8,5 @@ assunto varchar(800),
 txtdesc varchar(100)
 );
 
-#insert into contato values("Amanda","dika.diquinha@gmail.com","apenas oi","oi");
-
-#select * from contato;
+select * from contato;
+show databases;

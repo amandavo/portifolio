@@ -37,7 +37,6 @@ p,
 
 .apre {
   width: 500px;
-  color: #a0a0a0;
 }
 
 #nome {
@@ -46,7 +45,6 @@ p,
 
 #tecnica {
   font-size: 30px;
-  color: black;
   margin: 4% 0%;
 }
 
@@ -89,7 +87,6 @@ span,
 
 #titleProj {
   font-size: 20px;
-  color: #a0a0a0;
 }
 
 .title {
@@ -149,11 +146,6 @@ span,
 
 .servico p {
   font-size: 25px;
-}
-
-.divider {
-  border: 1px solid #a0a0a0;
-  width: 100%;
 }
 
 .siga {

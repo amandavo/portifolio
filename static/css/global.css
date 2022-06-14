@@ -12,7 +12,7 @@ html{
   }
   
   a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     transition: 0.3s;
   }
@@ -26,7 +26,7 @@ html{
   }
   
   .logo{
-    width: 10%;
+    width: 15%;
   }
   
   nav {
@@ -35,6 +35,8 @@ html{
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     height: 15vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
   }
   
   
@@ -66,11 +68,10 @@ html{
     }
     .nav-list {
       position: absolute;
-      top: 15vh;
+      top: 10vh;
       right: 0;
-      width: 50vw;
-      height: 85vh;
-      background: #a0a0a0;
+      width: 23vw;
+      height: 20vh;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
@@ -111,4 +112,8 @@ html{
   
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  @media screen and (max-width: 636px) {
+
   }

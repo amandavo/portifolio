@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="../static/css/styles_contato.css" />
   <link rel="stylesheet" href="../static/css/global.css" />
 </head>
-<!--
--entregar a mensagem
--->
 
 <body>
 
@@ -28,7 +25,7 @@
     <section id="seta">
       <header>
         <nav>
-          <a href="../templates/home.html">
+          <a href="{{ url_for('home')}}">
             <img src="../static/logoo.png" class="logo" alt="Amanda Vieira">
           </a>
 
@@ -39,11 +36,11 @@
           </div>
 
           <ul class="nav-list">
-            <li><a href="../templates/home.html">Início</a></li>
-            <li><a href="../templates/habilidades.html">Habilidades</a></li>
+            <li><a href="{{ url_for('home')}}">Início</a></li>
+            <li><a href="{{ url_for('habilidades')}}">Habilidades</a></li>
             <li><a href="">Contato</a></li>
           </ul>
-        
+
         </nav>
       </header>
 
@@ -61,34 +58,35 @@
         </div>
 
         <div class="row2">
+          <form action="/contato" method="post">
 
-          <div class="row3">
-            <div class="campo">
-              <label>Nome</label>
-              <input name="nome" type="text">
+            <div class="row3">
+
+              <div class="campo">
+                <label>Nome</label>
+                <input name="nome" type="text">
+              </div>
+
+              <div class="campo">
+                <label>Email</label>
+                <input name="email" type="email">
+              </div>
+            </div>
+
+            <div class="row3">
+              <div class="assunto">
+                <label>Assunto</label>
+                <input name="assunto" type="text">
+              </div>
             </div>
 
             <div class="campo">
-              <label>Email</label>
-              <input name="email" type="email">
-            </div>
-          </div>
-
-          <div class="row3">
-            <div class="assunto">
-              <label>Assunto</label>
-              <input name="assunto" type="text">
-            </div>
-          </div>
-
-          <div class="campo">
-            <p>Mensagem</p>
-            <form action="../templates/contato.html" method="get">
+              <p>Mensagem</p>
               <textarea name="txtdesc" id="txtdesc"></textarea>
-            </form>
-          </div>
+            </div>
 
-          <input id="enviar" type="submit">
+            <input id="enviar" type="submit">
+          </form>
         </div>
       </div>
   </div>

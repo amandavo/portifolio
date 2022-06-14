@@ -11,10 +11,6 @@
     <link rel="stylesheet" href="../static/css/styles_home.css" />
     <link rel="stylesheet" href="../static/css/global.css" />
 </head>
-<!--
--mudar foto
--modelar capa do dispositivo
--->
 
 <body style="background-color: rgb(229, 229, 229);">
     <div class="container">
@@ -28,7 +24,7 @@
         <section id="seta">
             <header>
                 <nav>
-                    <a href="../templates/home.html">
+                    <a href="{{ url_for('home')}}">
                         <img src="../static/logoo.png" class="logo" alt="Amanda Vieira">
                     </a>
                     <div class="mobile-menu">
@@ -39,8 +35,8 @@
                     
                     <ul class="nav-list">
                         <li><a href="">Início</a></li>
-                        <li><a href="../templates/habilidades.html">Habilidades</a></li>
-                        <li><a href="../templates/contato.html">Contato</a></li>
+                        <li><a href="{{ url_for('habilidades')}}">Habilidades</a></li>
+                        <li><a href="{{ url_for('contato')}}">Contato</a></li>
                     </ul>
                 </nav>
             </header>
@@ -49,14 +45,14 @@
             <div class="containerApre">
                 <div class="apre">
                     <p id="nome">AMANDA VIEIRA</p>
-                    <p id="tecnica"><b>Técnica em Informática</b></p>
+                    <p id="tecnica"><b>DESENVOLVEDORA WEB</b></p>
                     <p id="disc">Nos últimos 3 anos, estudei linguagens de programação, algoritmo, lógica e atualmente,
                         faço
                         faculdade/tecnólogo
                         para estar em constante aprendizado e em busca de atingir meu potencial.</p>
                     <a href="#projeto">Visualizar Projetos</a>
                     <span> ou </span>
-                    <a href="../templates/habilidades.html">Habilidades</a>
+                    <a href="{{ url_for('habilidades')}}">Habilidades</a>
                 </div>
                 <img src="../static/amanda.jpg">
             </div>
@@ -125,7 +121,7 @@
                         <li>Pygame</li>
                     </ul><br>
                     <div>
-                        <a href="../templates/video_game.html"><button>Ver Vídeo</button></a>
+                        <a href="{{ url_for('video_game')}}"><button>Ver Vídeo</button></a>
                         <a href="https://github.com/thaybaldao/stem2dgame"><button>Ver Código</button></a>
                     </div>
                 </div>
@@ -148,7 +144,7 @@
                         <li>MIT App Inventor</li>
                     </ul><br>
                     <div>
-                        <a href="../templates/video_device.html"><button>Ver Video</button></a>
+                        <a href="{{ url_for('video_device')}}"><button>Ver Video</button></a>
                     </div>
                 </div>
             </div>
@@ -157,7 +153,7 @@
         <section class="containerServico">
             <div class="servico">
                 <p>Precisa do meu serviço?</p>
-                <a href="../templates/contato.html">
+                <a href="{{ url_for('contato')}}">
                     <b>Vamos trabalhar juntos </b>
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>

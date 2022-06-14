@@ -25,7 +25,7 @@
         <section id="seta">
             <header>
                 <nav>
-                    <a href="../templates/home.html">
+                    <a href="{{ url_for('home')}}">
                         <img src="../static/logoo.png" class="logo" alt="Amanda Vieira">
                     </a>
                     <div class="mobile-menu">
@@ -34,9 +34,9 @@
                         <div class="line3"></div>
                     </div>
                     <ul class="nav-list">
-                        <li><a href="../templates/home.html">Início</a></li>
+                        <li><a href="{{ url_for('home')}}">Início</a></li>
                         <li><a href="">Habilidades</a></li>
-                        <li><a href="../templates/contato.html">Contato</a></li>
+                        <li><a href="{{ url_for('contato')}}">Contato</a></li>
                     </ul>
                 </nav>
             </header>
