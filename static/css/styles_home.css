@@ -19,6 +19,10 @@ p,
   height: 70vh;
 }
 
+.containerApre img{
+  width: 25vw;
+}
+
 .containerProj {
   display: flex;
   flex-direction: row;
@@ -29,13 +33,6 @@ p,
 
 .apre {
   margin-top: 15%;
-}
-
-.containerApre img {
-  width: 25vw;
-}
-
-.apre {
   width: 500px;
 }
 
@@ -44,6 +41,7 @@ p,
 }
 
 #tecnica {
+  font-family: coolvetica;
   font-size: 30px;
   margin: 4% 0%;
 }
@@ -55,7 +53,7 @@ p,
 .apre a {
   color: black;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -203,12 +201,12 @@ span,
   display: block;
   height: calc(100% - 10px);
   width: calc(100% - 10px);
-  background-color: #ffffff;
+  background-color: rgb(210, 209, 209);
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-size: 35px;
-  color: #001a2e;
+  color: black;
 }
 
 .containerMockup img {
@@ -236,6 +234,10 @@ span,
 
   .apre {
     width: auto;
+  }
+
+  .containerApre img{
+    width: 50vw;
   }
 
   .containerProj {
@@ -269,9 +271,5 @@ span,
 
   .fa-solid {
     font-size: 30px;
-  }
-
-  .containerApre img {
-    width: 50vw;
   }
 }

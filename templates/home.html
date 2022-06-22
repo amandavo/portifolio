@@ -25,7 +25,7 @@
             <header>
                 <nav>
                     <a href="{{ url_for('home')}}">
-                        <img src="../static/logoo.png" class="logo" alt="Amanda Vieira">
+                        <img src="../static/logo.png" class="logo" alt="Amanda Vieira">
                     </a>
                     <div class="mobile-menu">
                         <div class="line1"></div>
@@ -54,7 +54,12 @@
                     <span> ou </span>
                     <a href="{{ url_for('habilidades')}}">Habilidades</a>
                 </div>
-                <img src="../static/amanda.jpg">
+
+                <picture>
+                    <source media="(max-width: 636px)" srcset="../static/amanda2.jpg">
+                    <img src="../static/amanda1.png">
+                </picture>
+                
             </div>
 
             <a href="#projeto" class="containerSeta">

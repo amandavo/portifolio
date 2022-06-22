@@ -26,7 +26,7 @@ html{
   }
   
   .logo{
-    width: 15%;
+    width: 10%;
   }
   
   nav {
@@ -115,5 +115,15 @@ html{
   }
 
   @media screen and (max-width: 636px) {
+    .nav-list {
+      width: 36vw;
+    }
+    #titulo {
+      font-size: 25px;
+  }
+  }
 
+  @font-face{
+    font-family: coolvetica;
+    src: url('../coolvetica\ condensed\ rg.otf');
   }
