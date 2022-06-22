@@ -1,1 +1,1 @@
-web: gunicorn src.app:app 
+web:gunicorn src.app:amandavo-port2206 --log-file -
