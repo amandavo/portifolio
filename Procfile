@@ -1,1 +1,1 @@
-web: gunicorn src.app:app 
+web: gunicornsrc.app:amandavo-portifolio2206 --log-file -
