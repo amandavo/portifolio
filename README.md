@@ -8,8 +8,6 @@ O projeto tem como objetivo criar um portifolio em site para a matéria de Desig
 
 ## :dart: Backlog
   
- ### Backlog do produto
-  
  #### Requisitos Funcionais  
 | CÓDIGO | DESCRIÇÃO |
 |:------:|:---------:|
@@ -33,7 +31,49 @@ O projeto tem como objetivo criar um portifolio em site para a matéria de Desig
 
 ## :file_folder: Configuração das pastas
 * `doc`: Pasta com Protótipos
-* `static`: Pasta com Códigos em CSS, fotos etc.
-* `templates`: Pasta com Códigos em HTML
+* `src`: Pasta com Códigos.
+outros: Pasta com Documentação relacionada ao Projeto
 
-outras: Pasta com Documentação relacionada ao Projeto
+## :mag_right: Como rodar
+    
+Tecnologias necessárias: Python 3.10 e Workbench
+    
+- crie uma pasta, entre nela e clone o reposiório
+~~~   
+git clone https://github.com/amandavo/portifolio.git
+~~~
+    
+- entre na pasta do projeto 
+~~~   
+cd portifolio\src
+~~~
+    
+- instale o ambiente que ele será processado 
+~~~   
+py -m venv venv
+~~~
+    
+- ative o ambiente 
+~~~   
+venv\Scripts\activate
+~~~
+    
+- baixe as bibliotecas nescessarias 
+~~~   
+pip install -r requirements.txt
+~~~
+    
+- inicie o site 
+~~~   
+flask run
+~~~
+
+- caso nao aceite, utilize 
+~~~   
+python3 app.py
+~~~
+    
+- acesse o site utilizando 
+~~~   
+http://127.0.0.1:5000
+~~~
