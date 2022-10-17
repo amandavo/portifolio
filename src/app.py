@@ -17,10 +17,6 @@ mysql = MySQL(app)
 def home():
     return render_template("home.html")
 
-@app.route("/habilidades")
-def habilidades():
-    return render_template("habilidades.html")
-
 @app.route("/video_game")
 def video_game():
     return render_template("/video_game.html")
@@ -28,8 +24,6 @@ def video_game():
 @app.route("/video_device")
 def video_device():
     return render_template("/video_device.html")
-
-
 
 @app.route("/contato", methods=['GET', 'POST'])
 def contato():

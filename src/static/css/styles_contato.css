@@ -28,6 +28,10 @@ p, label{
   margin: 10% 0% 4% 0%;
 }
 
+.row2{
+  width:45vw;
+}
+
 .row3{
   display: flex;
   flex-direction: row;
@@ -42,9 +46,10 @@ p, label{
 }
 
 input{
-  width: 100%;
-  height: 6vh;
+  width: 17vw;
+  height: 5vh;
   font-size: 18px;
+  padding: 10px;
 }
 
 .assunto{
@@ -84,6 +89,10 @@ input{
   }
   input{
     height: 3vh;
+    width: 77vw;
+  }
+  .row3{
+    flex-direction: column;
   }
   #enviar{
     height: 3vh;
