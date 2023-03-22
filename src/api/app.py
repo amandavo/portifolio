@@ -22,3 +22,6 @@ def video_game():
 @app.route("/video_device")
 def video_device():
     return render_template("/video_device.html")
+
+if __name__ == '__main__':
+    app.run(debug=True)
