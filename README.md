@@ -43,7 +43,7 @@ Tecnologias necessárias: Python 3.10 e Workbench
 git clone https://github.com/amandavo/portifolio.git
 ~~~
     
-- entre na pasta do projeto 
+- entre na pasta source do projeto 
 ~~~   
 cd portifolio\src
 ~~~
@@ -57,22 +57,17 @@ py -m venv venv
 ~~~   
 venv\Scripts\activate
 ~~~
-    
-- sai da source 
-~~~   
-cd ..
-~~~
 
-- baixe as bibliotecas nescessarias 
+- baixe as bibliotecas necessarias 
 ~~~   
 pip install -r requirements.txt
 ~~~
 
-- entre na source 
+- entre na pasta api
 ~~~   
-cd src
+cd api
 ~~~
-    
+
 - inicie o site 
 ~~~   
 flask run
