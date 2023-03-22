@@ -58,9 +58,19 @@ py -m venv venv
 venv\Scripts\activate
 ~~~
     
+- sai da source 
+~~~   
+cd ..
+~~~
+
 - baixe as bibliotecas nescessarias 
 ~~~   
 pip install -r requirements.txt
+~~~
+
+- entre na source 
+~~~   
+cd src
 ~~~
     
 - inicie o site 

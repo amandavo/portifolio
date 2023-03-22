@@ -41,7 +41,7 @@ p,
 }
 
 #tecnica {
-  /*font-family: coolvetica;*/
+  font-family: coolvetica;
   font-size: 30px;
   margin: 4% 0%;
 }
@@ -51,10 +51,15 @@ p,
 }
 
 .apre a {
-  color: #83807f;
+  color: #d12323;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   text-decoration: none;
+}
+
+.apre span{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
 }
 
 span,
